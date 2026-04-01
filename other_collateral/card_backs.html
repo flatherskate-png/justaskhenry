@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Just Ask Henry — Card Backs</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --green: #2d4a35; --serif: 'Playfair Display', Georgia, serif; --sans: 'Lato', sans-serif; }
+@page { size: 816px 1056px; margin: 0; }
+body { width: 816px; height: 1056px; background: #e8e4de; position: relative; }
+.card {
+  position: absolute; width: 336px; height: 192px;
+  background: var(--green);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px; overflow: hidden;
+}
+.card::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 12px);
+}
+.card::after {
+  content: ''; position: absolute;
+  top: 12px; left: 12px; right: 12px; bottom: 12px;
+  border: 0.5px solid rgba(240,200,152,0.25); border-radius: 1px;
+}
+.back-logo { font-family: var(--serif); line-height: 1; position: relative; z-index: 1; text-align: center; }
+.back-logo-just-ask { font-weight: 400; font-style: normal; color: #f0c898; font-size: 30px; }
+.back-logo-henry { font-weight: 700; color: #fff; font-size: 30px; }
+.back-divider { width: 28px; height: 0.5px; background: rgba(240,200,152,0.4); position: relative; z-index: 1; }
+.back-area {
+  font-family: var(--sans); font-size: 7px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); position: relative; z-index: 1;
+}
+@media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+</head>
+<body>
+
+<div class="card" style="left:72px;top:48px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:408px;top:48px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:72px;top:240px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:408px;top:240px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:72px;top:432px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:408px;top:432px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:72px;top:624px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:408px;top:624px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:72px;top:816px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+<div class="card" style="left:408px;top:816px;">
+  <div class="back-logo"><span class="back-logo-just-ask">Just ask </span><span class="back-logo-henry">Henry.</span></div>
+  <div class="back-divider"></div>
+  <div class="back-area">Natick, MA &amp; MetroWest</div>
+</div>
+</body>
+</html>
