@@ -572,23 +572,26 @@
       .hero-testimonial { padding: 0.5rem 0.75rem 0.4rem; }
       .hero-testimonial p { font-size: 0.75rem; }
       .hero-testimonial cite { font-size: 0.62rem; }
+      .hero-testimonial:nth-child(2),
       .hero-testimonial:nth-child(3) { display: none; }
       .hero-right-overlay { display: block; }
       .mobile-testimonials {
         display: flex;
         flex-direction: column;
+        gap: 0.5rem;
         background: var(--cream);
         padding: 0.75rem 1rem;
       }
       .mobile-testimonials .hero-testimonial {
         display: flex;
+        flex-direction: column;
         background: rgba(45,74,53,0.82);
         border-left: 2px solid #f0c898;
         border-radius: 2px;
-        padding: 0.5rem 0.75rem 0.4rem;
+        padding: 0.6rem 0.9rem 0.5rem;
       }
-      .mobile-testimonials .hero-testimonial p { font-size: 0.78rem; color: #fff; font-style: italic; }
-      .mobile-testimonials .hero-testimonial cite { font-size: 0.62rem; color: #f0c898; }
+      .mobile-testimonials .hero-testimonial p { font-size: 0.78rem; color: #fff; font-style: italic; line-height: 1.5; margin-bottom: 0; }
+      .mobile-testimonials .hero-testimonial cite { font-size: 0.62rem; color: #f0c898; text-align: right; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-style: normal; margin-top: 0.25rem; display: block; }
       .hero-trust { gap: 0.5rem 1.25rem; margin-top: 1.25rem; padding-top: 1.25rem; }
       section { padding: 2.5rem 1.25rem; }
       .section-title { font-size: 1.8rem; }
