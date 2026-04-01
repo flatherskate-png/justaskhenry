@@ -567,33 +567,17 @@
       .hero-left { padding: 2rem 1.25rem 1.5rem; order: 1; }
       .hero-title { font-size: 2.2rem; }
       .hero-sub { font-size: 0.95rem; margin-bottom: 1.5rem; }
-      .hero-right { order: 2; height: 340px; min-height: 0; overflow: hidden; }
-      .hero-testimonials { display: flex; padding: 0 1rem 0.75rem; gap: 0.5rem; }
-      .hero-testimonial { padding: 0.5rem 0.75rem 0.4rem; }
-      .hero-testimonial p { font-size: 0.75rem; }
-      .hero-testimonial cite { font-size: 0.62rem; }
-      .hero-testimonial:nth-child(2),
-      .hero-testimonial:nth-child(3) { display: none; }
-      .hero-right-overlay { display: block; }
+      .hero-right { order: 2; height: 300px; min-height: 0; overflow: hidden; }
+      .hero-testimonials { display: none; }
+      .hero-right-overlay { display: none; }
       .mobile-testimonials {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        background: var(--cream);
-        padding: 0 1rem 0.75rem;
-        margin-top: -0.5rem;
+        gap: 0;
+        background: var(--green);
+        padding: 1rem 1.25rem;
       }
-      .mobile-testimonials .hero-testimonial {
-        display: flex;
-        flex-direction: column;
-        background: rgba(45,74,53,0.82);
-        border-left: 2px solid #f0c898;
-        border-radius: 2px;
-        padding: 0.6rem 0.9rem 0.5rem;
-        margin: 0;
-      }
-      .mobile-testimonials .hero-testimonial p { font-size: 0.78rem; color: #fff; font-style: italic; line-height: 1.5; margin-bottom: 0; }
-      .mobile-testimonials .hero-testimonial cite { font-size: 0.62rem; color: #f0c898; text-align: right; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-style: normal; margin-top: 0.25rem; display: block; }
+      .mobile-testimonials .hero-testimonial { border-radius: 0; }
       .hero-trust { gap: 0.5rem 1.25rem; margin-top: 1.25rem; padding-top: 1.25rem; }
       section { padding: 2.5rem 1.25rem; }
       .section-title { font-size: 1.8rem; }
@@ -685,6 +669,10 @@
 
 <!-- MOBILE TESTIMONIALS -->
 <div class="mobile-testimonials">
+  <div class="hero-testimonial">
+    <p>"Henry tackled a long list of small jobs that needed done. He also talked me out of doing things that weren't worth doing."</p>
+    <cite>— Josh, Natick</cite>
+  </div>
   <div class="hero-testimonial">
     <p>"You're a magician!"</p>
     <cite>— Shannon, Natick</cite>
@@ -879,7 +867,7 @@
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <div>
             <strong>Email</strong>
-            <a href="/cdn-cgi/l/email-protection#1c7479726e656c737070737f77245c7b717d7570327f7371"><span class="__cf_email__" data-cfemail="85ede0ebf7fcf5eae9e9eae6eebdc5e2e8e4ece9abe6eae8">[email&#160;protected]</span></a>
+            <a href="mailto:henrypollock8@gmail.com">henrypollock8@gmail.com</a>
           </div>
         </div>
         <div class="contact-detail">
