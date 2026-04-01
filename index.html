@@ -572,8 +572,19 @@
       .hero-testimonial { padding: 0.5rem 0.75rem 0.4rem; }
       .hero-testimonial p { font-size: 0.75rem; }
       .hero-testimonial cite { font-size: 0.62rem; }
+      .hero-testimonial:nth-child(2),
+      .hero-testimonial:nth-child(3) { display: none; }
       .hero-right-overlay { display: block; }
-      .mobile-testimonials { display: none; }
+      .mobile-testimonials {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background: var(--green);
+        padding: 0.75rem 1rem;
+      }
+      .mobile-testimonials .hero-testimonial { display: flex; border-radius: 0; padding: 0.5rem 0.75rem 0.4rem; }
+      .mobile-testimonials .hero-testimonial p { font-size: 0.78rem; }
+      .mobile-testimonials .hero-testimonial cite { font-size: 0.62rem; }
       .hero-trust { gap: 0.5rem 1.25rem; margin-top: 1.25rem; padding-top: 1.25rem; }
       section { padding: 2.5rem 1.25rem; }
       .section-title { font-size: 1.8rem; }
@@ -665,10 +676,6 @@
 
 <!-- MOBILE TESTIMONIALS -->
 <div class="mobile-testimonials">
-  <div class="hero-testimonial">
-    <p>"Henry tackled a long list of small jobs that needed done. He also talked me out of doing things that weren't worth doing."</p>
-    <cite>— Josh, Natick</cite>
-  </div>
   <div class="hero-testimonial">
     <p>"You're a magician!"</p>
     <cite>— Shannon, Natick</cite>
