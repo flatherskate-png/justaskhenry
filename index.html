@@ -50,7 +50,7 @@
     }
     .nav-logo-italic {
       font-family: var(--serif);
-      font-style: italic;
+      font-style: normal;
       font-weight: 400;
       color: var(--amber-light);
       font-size: 1.55rem;
@@ -542,7 +542,7 @@
       margin-bottom: 0.5rem;
       line-height: 1;
     }
-    .footer-logo-italic { font-family: var(--serif); font-style: italic; font-weight: 400; color: #f0c898; font-size: 1.3rem; }
+    .footer-logo-italic { font-family: var(--serif); font-style: normal; font-weight: 400; color: #f0c898; font-size: 1.3rem; }
     .footer-logo-bold { font-family: var(--serif); font-weight: 700; color: #fff; font-size: 1.3rem; }
 
     /* ── ANIMATIONS ── */
@@ -867,7 +867,7 @@
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <div>
             <strong>Email</strong>
-            <a href="mailto:henrypollock8@gmail.com">henrypollock8@gmail.com</a>
+            <a href="/cdn-cgi/l/email-protection#1c7479726e656c737070737f77245c7b717d7570327f7371"><span class="__cf_email__" data-cfemail="85ede0ebf7fcf5eae9e9eae6eebdc5e2e8e4ece9abe6eae8">[email&#160;protected]</span></a>
           </div>
         </div>
         <div class="contact-detail">
@@ -944,7 +944,7 @@
   <p style="margin-top:1rem;font-size:0.78rem;">© 2026 Just Ask Henry · Henry Pollock · HIC Registered · <a href="tel:6173084817" style="color:rgba(255,255,255,0.6);text-decoration:none;">(617) 308-4817</a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
@@ -971,11 +971,4 @@
         body: new FormData(form),
         headers: { 'Accept': 'application/json' }
       });
-      const data = await res.json();
-      if (data.success) {
-        form.style.display = 'none';
-        success.style.display = 'block';
-      } else {
-        btn.textContent = 'Send My Request →';
-        btn.disabled = false;
-        alert('Something went wrong. Please tr
+      const data = await res.js
