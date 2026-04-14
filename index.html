@@ -877,7 +877,7 @@
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <div>
             <strong>Email</strong>
-           <a href="mailto:henrypollock8@gmail.com">henrypollock8@gmail.com</a> 
+           <a href="/cdn-cgi/l/email-protection#9af2fff4e8e3eaf5f6f6f5f9f1a2dafdf7fbf3f6b4f9f5f7"><span class="__cf_email__" data-cfemail="4c2429223e353c232020232f27740c2b212d2520622f2321">[email&#160;protected]</span></a> 
           </div>
         </div>
         <div class="contact-detail">
@@ -954,7 +954,7 @@
   <p style="margin-top:1rem;font-size:0.78rem;">© 2026 Just Ask Henry · Henry Pollock · HIC Registered · <a href="tel:6173084817" style="color:rgba(255,255,255,0.6);text-decoration:none;">(617) 308-4817</a></p>
 </footer>
 
-
+<script>
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
@@ -981,4 +981,19 @@
         body: new FormData(form),
         headers: { 'Accept': 'application/json' }
       });
-      const data = await res.js
+      const data = await res.json();
+      if (data.success) {
+        form.style.display = 'none';
+        success.style.display = 'flex';
+      } else {
+        btn.textContent = 'Try Again';
+        btn.disabled = false;
+      }
+    } catch (err) {
+      btn.textContent = 'Try Again';
+      btn.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>
